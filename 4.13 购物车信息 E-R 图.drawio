@@ -1,0 +1,112 @@
+<mxfile host="app.diagrams.net" modified="2026-03-31T20:24:00.000Z" agent="Mozilla/5.0" version="24.7.17" type="device">
+  <diagram id="fig-4-17-cart-er" name="图4-17 购物车信息E-R图">
+    <mxGraphModel dx="1366" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="title" value="购物车信息 E-R 图" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="334" y="10" width="500" height="30" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="entity_user" value="用户信息" style="shape=rectangle;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="260" width="150" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="entity_book" value="图书信息" style="shape=rectangle;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="910" y="260" width="150" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="entity_cart" value="购物车信息" style="shape=rectangle;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="260" width="180" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="rel_user_cart" value="拥有" style="shape=rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="300" y="265" width="90" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="rel_book_cart" value="对应" style="shape=rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="750" y="265" width="90" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="attr_cartId" value="购物车 ID（主键）" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="495" y="90" width="180" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="attr_userId" value="用户 ID（外键）" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="260" y="120" width="170" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="attr_bookId" value="图书 ID（外键）" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="720" y="120" width="170" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="attr_count" value="商品数量" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="760" y="400" width="140" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="attr_createTime" value="创建时间" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="500" y="520" width="140" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="attr_updateTime" value="更新时间" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="280" y="400" width="140" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="note_unique" value="用户 ID + 图书 ID 联合唯一" style="shape=note;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#fff2cc;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="780" y="520" width="180" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge1" value="" style="endArrow=none;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="entity_cart" target="attr_cartId">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge2" value="" style="endArrow=none;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="entity_cart" target="attr_userId">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge3" value="" style="endArrow=none;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="entity_cart" target="attr_bookId">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge4" value="" style="endArrow=none;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="entity_cart" target="attr_count">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge5" value="" style="endArrow=none;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="entity_cart" target="attr_createTime">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge6" value="" style="endArrow=none;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="entity_cart" target="attr_updateTime">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge7" value="" style="endArrow=none;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="entity_user" target="rel_user_cart">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge8" value="" style="endArrow=none;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="rel_user_cart" target="entity_cart">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge9" value="" style="endArrow=none;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="entity_cart" target="rel_book_cart">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge10" value="" style="endArrow=none;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="rel_book_cart" target="entity_book">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="card1" value="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="248" y="245" width="20" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="card2" value="N" style="text;html=1;strokeColor=none;fillColor=none;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="460" y="245" width="20" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="card3" value="N" style="text;html=1;strokeColor=none;fillColor=none;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="700" y="245" width="20" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="card4" value="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="890" y="245" width="20" height="20" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="caption" value="图 4-17 购物车信息 E-R 图" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="334" y="740" width="500" height="30" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

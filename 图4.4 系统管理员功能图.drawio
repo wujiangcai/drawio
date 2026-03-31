@@ -1,0 +1,118 @@
+<mxfile host="app.diagrams.net" modified="2026-03-31T18:44:00.000Z" agent="Mozilla/5.0" version="24.7.17" type="device">
+  <diagram id="fig-4-4-admin-function" name="图4.4 系统管理员功能图">
+    <mxGraphModel dx="1680" dy="980" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="title" value="系统管理员功能图" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontSize=16;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="617" y="40" width="420" height="46" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="center" value="系统管理员" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontSize=16;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="697" y="190" width="140" height="72" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="adminLogin" value="后台登录" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="190" y="120" width="140" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="bookManage" value="图书信息管理" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="390" y="120" width="150" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="categoryManage" value="分类管理" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="600" y="95" width="140" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="userManage" value="用户信息查询" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="800" y="95" width="150" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="orderManage" value="订单管理" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="120" width="140" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="operateConfig" value="首页推荐配置" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="120" width="150" height="42" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="bookAdd" value="新增图书" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="250" y="360" width="130" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="bookEdit" value="修改图书信息" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="420" y="360" width="150" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="bookDelete" value="删除图书" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="610" y="360" width="130" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="bookQuery" value="查询图书" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="780" y="360" width="130" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="bookStatus" value="上下架管理" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="950" y="360" width="130" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="shipOrder" value="订单处理与发货" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="360" width="160" height="42" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="bookNote" value="维护书名、作者、出版社、价格、库存、封面及简介等信息，保证前台展示与实际销售数据一致" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="180" y="500" width="390" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="orderNote" value="可查看订单明细，根据业务处理情况更新订单状态，如待发货、已发货和已完成等" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="620" y="500" width="360" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="configNote" value="通过配置首页推荐图书等基础运营内容，提高首页展示效果，满足店铺日常经营需要" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="500" width="340" height="64" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.2;strokeColor=#000000;" edge="1" parent="1" source="center" target="adminLogin">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.2;strokeColor=#000000;" edge="1" parent="1" source="center" target="bookManage">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.2;strokeColor=#000000;" edge="1" parent="1" source="center" target="categoryManage">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.2;strokeColor=#000000;" edge="1" parent="1" source="center" target="userManage">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.2;strokeColor=#000000;" edge="1" parent="1" source="center" target="orderManage">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.2;strokeColor=#000000;" edge="1" parent="1" source="center" target="operateConfig">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;dashed=1;strokeWidth=1.1;strokeColor=#000000;" edge="1" parent="1" source="bookManage" target="bookAdd">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;dashed=1;strokeWidth=1.1;strokeColor=#000000;" edge="1" parent="1" source="bookManage" target="bookEdit">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;dashed=1;strokeWidth=1.1;strokeColor=#000000;" edge="1" parent="1" source="bookManage" target="bookDelete">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;dashed=1;strokeWidth=1.1;strokeColor=#000000;" edge="1" parent="1" source="bookManage" target="bookQuery">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;dashed=1;strokeWidth=1.1;strokeColor=#000000;" edge="1" parent="1" source="bookManage" target="bookStatus">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;dashed=1;strokeWidth=1.1;strokeColor=#000000;" edge="1" parent="1" source="orderManage" target="shipOrder">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;dashed=1;strokeWidth=1.0;strokeColor=#000000;" edge="1" parent="1" source="bookManage" target="bookNote">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;dashed=1;strokeWidth=1.0;strokeColor=#000000;" edge="1" parent="1" source="orderManage" target="orderNote">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;dashed=1;strokeWidth=1.0;strokeColor=#000000;" edge="1" parent="1" source="operateConfig" target="configNote">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="caption" value="图4.4 系统管理员功能图" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="617" y="1085" width="420" height="30" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

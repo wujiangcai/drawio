@@ -1,0 +1,139 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0" version="29.6.6">
+  <diagram id="registered-user-usecase-001" name="Page-1">
+    <mxGraphModel dx="556" dy="687" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="620" width="890" x="80" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="2" style="ellipse;whiteSpace=wrap;html=1;" value="用户注册" vertex="1">
+          <mxGeometry height="50" width="110" x="268.31" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="2" style="ellipse;whiteSpace=wrap;html=1;" value="用户登录" vertex="1">
+          <mxGeometry height="50" width="130" x="564.8900000000001" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="2" style="ellipse;whiteSpace=wrap;html=1;" value="个人信息管理" vertex="1">
+          <mxGeometry height="50" width="113.95" x="283.03000000000003" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="2" style="ellipse;whiteSpace=wrap;html=1;" value="收货地址管理" vertex="1">
+          <mxGeometry height="50" width="115.64" x="262.67" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="2" style="ellipse;whiteSpace=wrap;html=1;" value="浏览图书" vertex="1">
+          <mxGeometry height="50" width="130" x="566.29" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="2" style="ellipse;whiteSpace=wrap;html=1;" value="检索图书" vertex="1">
+          <mxGeometry height="50" width="144.88372093023256" x="529.9976744186047" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="2" style="ellipse;whiteSpace=wrap;html=1;" value="查看图书详情" vertex="1">
+          <mxGeometry height="50" width="120" x="280" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="2" style="ellipse;whiteSpace=wrap;html=1;" value="加入购物车" vertex="1">
+          <mxGeometry height="50" width="144.88372093023256" x="551.4072093023256" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="2" style="ellipse;whiteSpace=wrap;html=1;" value="修改商品数量" vertex="1">
+          <mxGeometry height="50" width="104.36" x="145.09" y="266" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="2" style="ellipse;whiteSpace=wrap;html=1;" value="移除购物车商品" vertex="1">
+          <mxGeometry height="50" width="105.93" x="154.07" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="2" style="ellipse;whiteSpace=wrap;html=1;" value="创建订单" vertex="1">
+          <mxGeometry height="50" width="144.88372093023256" x="550.0023255813953" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="2" style="ellipse;whiteSpace=wrap;html=1;" value="确认收货地址" vertex="1">
+          <mxGeometry height="50" width="135.58" x="724.42" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="2" style="ellipse;whiteSpace=wrap;html=1;" value="确认购买数量" vertex="1">
+          <mxGeometry height="50" width="130" x="720" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="2" style="ellipse;whiteSpace=wrap;html=1;" value="模拟支付" vertex="1">
+          <mxGeometry height="50" width="144.88372093023256" x="550.0048837209303" y="316" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="2" style="ellipse;whiteSpace=wrap;html=1;" value="订单管理" vertex="1">
+          <mxGeometry height="50" width="105.17" x="154.07000000000002" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="2" style="ellipse;whiteSpace=wrap;html=1;" value="查看订单列表" vertex="1">
+          <mxGeometry height="50" width="100" x="10" y="266" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="2" style="ellipse;whiteSpace=wrap;html=1;" value="查看订单详情" vertex="1">
+          <mxGeometry height="50" width="90" x="20" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="22" parent="2" style="ellipse;whiteSpace=wrap;html=1;" value="跟踪订单状态" vertex="1">
+          <mxGeometry height="50" width="89.65" x="15.17" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="23" edge="1" parent="2" source="12" style="endArrow=open;html=1;dashed=1;" target="13" value="«include»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="24" edge="1" parent="2" source="12" style="endArrow=open;html=1;dashed=1;" target="14" value="«include»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25" edge="1" parent="2" source="15" style="endArrow=open;html=1;dashed=1;" target="16" value="«include»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="26" edge="1" parent="2" source="15" style="endArrow=open;html=1;dashed=1;" target="17" value="«include»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="27" edge="1" parent="2" source="18" style="endArrow=open;html=1;dashed=1;" target="15" value="«extend»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="28" edge="1" parent="2" source="19" style="endArrow=open;html=1;dashed=1;" target="20" value="«include»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="29" edge="1" parent="2" source="19" style="endArrow=open;html=1;dashed=1;" target="21" value="«include»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="30" edge="1" parent="2" source="19" style="endArrow=open;html=1;dashed=1;" target="22" value="«include»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="2" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="注册用户" vertex="1">
+          <mxGeometry height="120" width="62.09302325581396" x="413.9488372093023" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="31" edge="1" parent="2" source="3" style="endArrow=classic;html=1;endFill=1;" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="32" edge="1" parent="2" source="3" style="endArrow=classic;html=1;endFill=1;" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="33" edge="1" parent="2" source="3" style="endArrow=classic;html=1;endFill=1;" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="34" edge="1" parent="2" source="3" style="endArrow=classic;html=1;endFill=1;" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="35" edge="1" parent="2" source="3" style="endArrow=classic;html=1;endFill=1;" target="8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="36" edge="1" parent="2" source="3" style="endArrow=classic;html=1;endFill=1;" target="9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="37" edge="1" parent="2" source="3" style="endArrow=classic;html=1;endFill=1;" target="10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="38" edge="1" parent="2" source="3" style="endArrow=classic;html=1;endFill=1;" target="11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="39" edge="1" parent="2" source="3" style="endArrow=none;html=1;" target="12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="40" edge="1" parent="2" source="3" style="endArrow=classic;html=1;endFill=1;" target="15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="41" edge="1" parent="2" source="3" style="endArrow=classic;html=1;endFill=1;" target="18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="42" edge="1" parent="2" source="12" style="endArrow=classic;html=1;endFill=1;" target="19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eZ1O_LltpW1enluqCYDZ-42" edge="1" parent="2" source="3" style="endArrow=classic;html=1;endFill=1;" target="12" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300.1162790697675" y="335" as="sourcePoint" />
+            <mxPoint x="619.8953488372093" y="485" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" parent="2" style="ellipse;whiteSpace=wrap;html=1;" value="购物车管理" vertex="1">
+          <mxGeometry height="50" width="98.31" x="280" y="350" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

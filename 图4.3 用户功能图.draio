@@ -1,0 +1,118 @@
+<mxfile host="app.diagrams.net" modified="2026-03-31T18:43:00.000Z" agent="Mozilla/5.0" version="24.7.17" type="device">
+  <diagram id="fig-4-3-user-function" name="图4.3 用户功能图">
+    <mxGraphModel dx="1680" dy="980" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="title" value="用户功能图" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontSize=16;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="637" y="40" width="380" height="46" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="center" value="用户" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontSize=16;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="712" y="180" width="120" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="guestBrowse" value="首页浏览" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="180" y="130" width="140" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="searchBook" value="图书检索" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="370" y="130" width="140" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="registerLogin" value="注册与登录" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="560" y="105" width="150" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="profile" value="个人中心管理" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="850" y="105" width="150" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="browseCategory" value="分类浏览图书" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="130" width="150" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="bookDetail" value="查看图书详情" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1230" y="130" width="150" height="42" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="address" value="收货地址管理" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="220" y="340" width="150" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="cart" value="购物车管理" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="430" y="340" width="150" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="createOrder" value="生成订单" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="640" y="360" width="140" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="pay" value="模拟支付" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="820" y="360" width="140" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="orderQuery" value="订单查询与跟踪" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="340" width="170" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="status" value="订单状态查看" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="340" width="150" height="42" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="guestNote" value="游客状态下可浏览首页、查看推荐图书、按关键词搜索图书，但不能操作购物车、订单和个人信息" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="110" y="500" width="360" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="detailNote" value="图书详情包含封面、书名、作者、出版社、ISBN、价格、库存及内容简介等信息" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="540" y="500" width="350" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="orderNote" value="订单记录图书明细、金额、收货地址与处理状态，用户可查看历史订单及当前订单进度" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="960" y="500" width="390" height="64" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.2;strokeColor=#000000;" edge="1" parent="1" source="center" target="guestBrowse">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.2;strokeColor=#000000;" edge="1" parent="1" source="center" target="searchBook">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.2;strokeColor=#000000;" edge="1" parent="1" source="center" target="registerLogin">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.2;strokeColor=#000000;" edge="1" parent="1" source="center" target="profile">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.2;strokeColor=#000000;" edge="1" parent="1" source="center" target="browseCategory">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.2;strokeColor=#000000;" edge="1" parent="1" source="center" target="bookDetail">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.2;strokeColor=#000000;" edge="1" parent="1" source="center" target="address">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.2;strokeColor=#000000;" edge="1" parent="1" source="center" target="cart">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.2;strokeColor=#000000;" edge="1" parent="1" source="center" target="createOrder">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.2;strokeColor=#000000;" edge="1" parent="1" source="center" target="pay">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.2;strokeColor=#000000;" edge="1" parent="1" source="center" target="orderQuery">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.2;strokeColor=#000000;" edge="1" parent="1" source="center" target="status">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;dashed=1;strokeWidth=1.0;strokeColor=#000000;" edge="1" parent="1" source="guestBrowse" target="guestNote">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;dashed=1;strokeWidth=1.0;strokeColor=#000000;" edge="1" parent="1" source="bookDetail" target="detailNote">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;dashed=1;strokeWidth=1.0;strokeColor=#000000;" edge="1" parent="1" source="orderQuery" target="orderNote">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="caption" value="图4.3 用户功能图" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="647" y="1085" width="360" height="30" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
