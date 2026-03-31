@@ -1,0 +1,95 @@
+<mxfile host="app.diagrams.net" modified="2026-03-30T14:18:00.000Z" agent="ChatGPT" version="24.7.17">
+  <diagram id="guest-usecase-001" name="Page-1">
+    <mxGraphModel dx="1280" dy="720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="2" value="前台商城系统" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="240" y="60" width="760" height="500" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="3" value="游客" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="240" width="60" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="4" value="查看首页推荐图书" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+          <mxGeometry x="70" y="50" width="160" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="5" value="查看分类入口" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+          <mxGeometry x="300" y="50" width="140" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="6" value="查看运营展示信息" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+          <mxGeometry x="520" y="50" width="160" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="7" value="按分类浏览图书" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+          <mxGeometry x="70" y="170" width="160" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="8" value="关键词检索图书" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+          <mxGeometry x="300" y="170" width="160" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="9" value="查看图书列表" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+          <mxGeometry x="540" y="170" width="140" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="10" value="查看图书详情" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+          <mxGeometry x="210" y="300" width="140" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="11" value="注册账号" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+          <mxGeometry x="450" y="300" width="120" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="12" value="«include»" style="endArrow=open;html=1;dashed=1;" edge="1" parent="2" source="7" target="9">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="13" value="«include»" style="endArrow=open;html=1;dashed=1;" edge="1" parent="2" source="8" target="9">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="14" value="«extend»" style="endArrow=open;html=1;dashed=1;" edge="1" parent="2" source="10" target="9">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="15" style="endArrow=none;html=1;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="16" style="endArrow=none;html=1;" edge="1" parent="1" source="3" target="5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="17" style="endArrow=none;html=1;" edge="1" parent="1" source="3" target="6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="18" style="endArrow=none;html=1;" edge="1" parent="1" source="3" target="7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="19" style="endArrow=none;html=1;" edge="1" parent="1" source="3" target="8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="20" style="endArrow=none;html=1;" edge="1" parent="1" source="3" target="9">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="21" style="endArrow=none;html=1;" edge="1" parent="1" source="3" target="10">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="22" style="endArrow=none;html=1;" edge="1" parent="1" source="3" target="11">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
