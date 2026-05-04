@@ -1,117 +1,61 @@
-<mxfile host="app.diagrams.net" modified="2026-03-31T20:40:00.000Z" agent="Mozilla/5.0" version="24.7.17" type="device">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0">
   <diagram id="fig-4-19-order-detail-er" name="图4-19 订单明细信息E-R图">
-    <mxGraphModel dx="1366" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1136" dy="771" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-
-        <mxCell id="title" value="订单明细信息 E-R 图" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="334" y="10" width="500" height="30" as="geometry"/>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;" value="订单明细信息 E-R 图" vertex="1">
+          <mxGeometry height="30" width="500" x="334" y="10" as="geometry" />
         </mxCell>
-
-        <mxCell id="entity_order" value="订单信息" style="shape=rectangle;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="90" y="260" width="160" height="70" as="geometry"/>
+        <mxCell id="entity_detail" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=14;fontStyle=1;" value="订单明细" vertex="1">
+          <mxGeometry height="71" width="211" x="391" y="322" as="geometry" />
         </mxCell>
-
-        <mxCell id="entity_book" value="图书信息" style="shape=rectangle;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="920" y="260" width="160" height="70" as="geometry"/>
+        <mxCell id="attr_detailId" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=13;" value="订单明细 ID" vertex="1">
+          <mxGeometry height="50" width="130" x="310" y="130" as="geometry" />
         </mxCell>
-
-        <mxCell id="entity_detail" value="订单明细信息" style="shape=rectangle;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="455" y="245" width="220" height="90" as="geometry"/>
+        <mxCell id="attr_orderId" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=13;" value="订单 ID" vertex="1">
+          <mxGeometry height="52" width="117" x="205" y="164" as="geometry" />
         </mxCell>
-
-        <mxCell id="rel_order_detail" value="包含" style="shape=rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="300" y="265" width="90" height="60" as="geometry"/>
+        <mxCell id="attr_bookId" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=13;" value="图书 ID" vertex="1">
+          <mxGeometry height="50" width="120" x="580" y="140" as="geometry" />
         </mxCell>
-
-        <mxCell id="rel_book_detail" value="对应" style="shape=rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="740" y="265" width="90" height="60" as="geometry"/>
+        <mxCell id="attr_bookName" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=13;" value="图书名称" vertex="1">
+          <mxGeometry height="50" width="120" x="700" y="170" as="geometry" />
         </mxCell>
-
-        <mxCell id="attr_detailId" value="订单明细 ID（主键）" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="470" y="80" width="190" height="50" as="geometry"/>
+        <mxCell id="attr_price" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=13;" value="购买价格" vertex="1">
+          <mxGeometry height="50" width="111" x="760" y="230" as="geometry" />
         </mxCell>
-
-        <mxCell id="attr_orderId" value="订单 ID（外键）" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="240" y="100" width="170" height="50" as="geometry"/>
+        <mxCell id="attr_quantity" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=13;" value="购买数量" vertex="1">
+          <mxGeometry height="58" width="110" x="119" y="206" as="geometry" />
         </mxCell>
-
-        <mxCell id="attr_bookId" value="图书 ID（外键）" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="710" y="100" width="170" height="50" as="geometry"/>
+        <mxCell id="attr_subtotal" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=13;" value="小计金额" vertex="1">
+          <mxGeometry height="50" width="120" x="450" y="120" as="geometry" />
         </mxCell>
-
-        <mxCell id="attr_bookName" value="图书名称（快照）" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="860" y="170" width="180" height="50" as="geometry"/>
+        <mxCell id="edge1" edge="1" parent="1" source="entity_detail" style="endArrow=none;strokeColor=#000000;strokeWidth=1.2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="attr_detailId" value="">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <mxCell id="attr_price" value="购买价格" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="880" y="390" width="150" height="50" as="geometry"/>
+        <mxCell id="edge2" edge="1" parent="1" source="entity_detail" style="endArrow=none;strokeColor=#000000;strokeWidth=1.2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="attr_orderId" value="">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <mxCell id="attr_quantity" value="购买数量" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="770" y="520" width="150" height="50" as="geometry"/>
+        <mxCell id="edge3" edge="1" parent="1" source="entity_detail" style="endArrow=none;strokeColor=#000000;strokeWidth=1.2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="attr_bookId" value="">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <mxCell id="attr_subtotal" value="小计金额" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="600" y="570" width="150" height="50" as="geometry"/>
+        <mxCell id="edge4" edge="1" parent="1" source="entity_detail" style="endArrow=none;strokeColor=#000000;strokeWidth=1.2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="attr_bookName" value="">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <mxCell id="note_snapshot" value="说明：图书名称、购买价格采用冗余存储，用于保留下单时商品快照" style="shape=note;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#fff2cc;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="910" y="70" width="190" height="90" as="geometry"/>
+        <mxCell id="edge5" edge="1" parent="1" source="entity_detail" style="endArrow=none;strokeColor=#000000;strokeWidth=1.2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="attr_price" value="">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <mxCell id="edge1" value="" style="endArrow=none;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="entity_detail" target="attr_detailId">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="edge6" edge="1" parent="1" source="entity_detail" style="endArrow=none;strokeColor=#000000;strokeWidth=1.2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="attr_quantity" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="350" as="sourcePoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="edge2" value="" style="endArrow=none;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="entity_detail" target="attr_orderId">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="edge7" edge="1" parent="1" source="entity_detail" style="endArrow=none;strokeColor=#000000;strokeWidth=1.2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="attr_subtotal" value="">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge3" value="" style="endArrow=none;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="entity_detail" target="attr_bookId">
-          <mxGeometry relative="1" as="geometry"/>
-        </mxCell>
-        <mxCell id="edge4" value="" style="endArrow=none;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="entity_detail" target="attr_bookName">
-          <mxGeometry relative="1" as="geometry"/>
-        </mxCell>
-        <mxCell id="edge5" value="" style="endArrow=none;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="entity_detail" target="attr_price">
-          <mxGeometry relative="1" as="geometry"/>
-        </mxCell>
-        <mxCell id="edge6" value="" style="endArrow=none;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="entity_detail" target="attr_quantity">
-          <mxGeometry relative="1" as="geometry"/>
-        </mxCell>
-        <mxCell id="edge7" value="" style="endArrow=none;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="entity_detail" target="attr_subtotal">
-          <mxGeometry relative="1" as="geometry"/>
-        </mxCell>
-
-        <mxCell id="edge8" value="" style="endArrow=none;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="entity_order" target="rel_order_detail">
-          <mxGeometry relative="1" as="geometry"/>
-        </mxCell>
-        <mxCell id="edge9" value="" style="endArrow=none;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="rel_order_detail" target="entity_detail">
-          <mxGeometry relative="1" as="geometry"/>
-        </mxCell>
-
-        <mxCell id="edge10" value="" style="endArrow=none;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="entity_detail" target="rel_book_detail">
-          <mxGeometry relative="1" as="geometry"/>
-        </mxCell>
-        <mxCell id="edge11" value="" style="endArrow=none;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="rel_book_detail" target="entity_book">
-          <mxGeometry relative="1" as="geometry"/>
-        </mxCell>
-
-        <mxCell id="card1" value="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="260" y="245" width="20" height="20" as="geometry"/>
-        </mxCell>
-        <mxCell id="card2" value="N" style="text;html=1;strokeColor=none;fillColor=none;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="420" y="245" width="20" height="20" as="geometry"/>
-        </mxCell>
-        <mxCell id="card3" value="N" style="text;html=1;strokeColor=none;fillColor=none;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="690" y="245" width="20" height="20" as="geometry"/>
-        </mxCell>
-        <mxCell id="card4" value="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="900" y="245" width="20" height="20" as="geometry"/>
-        </mxCell>
-
-        <mxCell id="caption" value="图 4-19 订单明细信息 E-R 图" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="334" y="740" width="500" height="30" as="geometry"/>
+        <mxCell id="caption" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;" value="图 4-19 订单明细信息 E-R 图" vertex="1">
+          <mxGeometry height="30" width="500" x="334" y="740" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

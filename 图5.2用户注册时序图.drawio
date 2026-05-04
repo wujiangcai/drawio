@@ -1,0 +1,111 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0" version="24.7.17">
+  <diagram id="user-register-sequence-diagram" name="用户注册时序图">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- 标题 -->
+        <mxCell id="title" value="用户注册时序图" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="434" y="20" width="300" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- 前端 -->
+        <mxCell id="frontend" value="前端（Register.vue）" style="swimlane;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#6c8ebf;fontSize=13;fontStyle=1;startSize=30;" vertex="1" parent="1">
+          <mxGeometry x="20" y="70" width="1120" height="360" as="geometry" />
+        </mxCell>
+
+        <!-- 后端 -->
+        <mxCell id="backend" value="后端（FrontAuthController、UserServiceImpl）" style="swimlane;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#9673a6;fontSize=13;fontStyle=1;startSize=30;" vertex="1" parent="1">
+          <mxGeometry x="20" y="450" width="1120" height="360" as="geometry" />
+        </mxCell>
+
+        <!-- 用户填写注册信息 -->
+        <mxCell id="frontendInput" value="用户填写注册信息（用户名、密码、确认密码、手机号、昵称、邮箱）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="200" y="120" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 校验前端输入 -->
+        <mxCell id="frontendValidate" value="前端校验（格式验证）" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="400" y="120" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 校验通过箭头 -->
+        <mxCell id="frontendValidatePass" value="格式校验通过" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" edge="1" parent="1" source="frontendValidate" target="sendRequest">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 校验失败箭头 -->
+        <mxCell id="frontendValidateFail" value="格式校验失败" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" edge="1" parent="1" source="frontendValidate" target="frontendError">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 发送请求 -->
+        <mxCell id="sendRequest" value="发送 POST 请求到 /api/front/auth/register" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="600" y="120" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 后端接收请求 -->
+        <mxCell id="backendReceive" value="FrontAuthController 接收请求" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="600" y="450" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 后端参数校验 -->
+        <mxCell id="paramValidate" value="参数校验（RegisterRequest 注解）" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="800" y="450" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 校验成功箭头 -->
+        <mxCell id="paramValidatePass" value="校验通过" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" edge="1" parent="1" source="paramValidate" target="checkDuplicate">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 校验失败箭头 -->
+        <mxCell id="paramValidateFail" value="校验失败" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" edge="1" parent="1" source="paramValidate" target="paramError">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 重复性校验 -->
+        <mxCell id="checkDuplicate" value="校验用户名和手机号是否重复" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="450" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 重复性校验成功箭头 -->
+        <mxCell id="duplicateCheckPass" value="校验通过" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" edge="1" parent="1" source="checkDuplicate" target="encryptPassword">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 重复性校验失败箭头 -->
+        <mxCell id="duplicateCheckFail" value="重复错误" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" edge="1" parent="1" source="checkDuplicate" target="duplicateError">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 密码加密 -->
+        <mxCell id="encryptPassword" value="PasswordEncoder 加密密码" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="450" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 写入数据库 -->
+        <mxCell id="writeDatabase" value="UserMapper 写入数据库" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="550" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 返回认证结果 -->
+        <mxCell id="returnResult" value="返回认证结果（token、userId、username、role）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="650" width="220" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 结束 -->
+        <mxCell id="end" value="结束" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1440" y="740" width="100" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- 各节点之间的箭头 -->
+        <mxCell id="arrows" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" edge="1" parent="1" source="sendRequest" target="backendReceive">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

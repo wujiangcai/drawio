@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0">
+  <diagram id="user-register-flow" name="用户注册流程图">
+    <mxGraphModel dx="1278" dy="868" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;" value="用户注册流程图" vertex="1">
+          <mxGeometry height="30" width="300" x="434" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="start" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;fontStyle=1;" value="开始" vertex="1">
+          <mxGeometry height="40" width="120" x="524" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow1" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" target="registerForm" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="registerForm" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="用户填写注册信息（用户名、密码、确认密码、手机号、昵称、邮箱）" vertex="1">
+          <mxGeometry height="60" width="180" x="494" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow2" edge="1" parent="1" source="registerForm" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" target="frontendValidate" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="frontendValidate" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" value="前端失焦时进行格式校验（用户名4-20位字母/数字/下划线、密码含字母和数字、手机号11位、邮箱格式）" vertex="1">
+          <mxGeometry height="80" width="220" x="474" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="arrowFail" edge="1" parent="1" source="frontendValidate" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" target="failTip" value="校验失败">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="failTip" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" value="前端提示错误信息" vertex="1">
+          <mxGeometry height="50" width="120" x="740" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="arrowValid" edge="1" parent="1" source="frontendValidate" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" target="ajaxRequest" value="校验通过">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ajaxRequest" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="调用 register 方法，POST 请求 /api/front/auth/register" vertex="1">
+          <mxGeometry height="50" width="180" x="494" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow3" edge="1" parent="1" source="ajaxRequest" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" target="backendReceive" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="backendReceive" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" value="FrontAuthController 接收请求" vertex="1">
+          <mxGeometry height="40" width="180" x="494" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow4" edge="1" parent="1" source="backendReceive" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" target="paramValidate" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="paramValidate" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" value="RegisterRequest 注解校验参数合法性" vertex="1">
+          <mxGeometry height="60" width="200" x="484" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="arrowParamFail" edge="1" parent="1" source="paramValidate" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" target="paramFail" value="校验失败">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="paramFail" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" value="返回参数错误" vertex="1">
+          <mxGeometry height="40" width="110" x="730" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="arrowParamOk" edge="1" parent="1" source="paramValidate" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" target="checkDuplicate" value="校验通过">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="checkDuplicate" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" value="UserServiceImpl.register 判断用户名和手机号是否重复" vertex="1">
+          <mxGeometry height="60" width="240" x="464" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="arrowDupFail" edge="1" parent="1" source="checkDuplicate" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" target="duplicateFail" value="已存在">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="duplicateFail" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" value="返回重复错误" vertex="1">
+          <mxGeometry height="40" width="110" x="740" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="arrowDupOk" edge="1" parent="1" source="checkDuplicate" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" target="encryptSave" value="不存在">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="encryptSave" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="PasswordEncoder 加密密码，UserMapper 写入数据库" vertex="1">
+          <mxGeometry height="50" width="220" x="474" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="arrowSaveToResult" edge="1" parent="1" source="encryptSave" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" target="returnResult" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="returnResult" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" value="返回认证结果（token、userId、username、role）" vertex="1">
+          <mxGeometry height="50" width="220" x="474" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="arrowResultToEnd" edge="1" parent="1" source="returnResult" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" target="end" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="end" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;fontStyle=1;" value="结束" vertex="1">
+          <mxGeometry height="40" width="100" x="534" y="830" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

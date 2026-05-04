@@ -1,0 +1,161 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0" version="24.7.17">
+  <diagram id="book-browsing-retrieval-sequence-diagram" name="图书浏览与检索时序图">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- 标题 -->
+        <mxCell id="title" value="图书浏览与检索时序图" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="434" y="20" width="300" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- 前端 -->
+        <mxCell id="frontend" value="前端（Home.vue, BookList.vue, BookDetail.vue）" style="swimlane;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#6c8ebf;fontSize=13;fontStyle=1;startSize=30;" vertex="1" parent="1">
+          <mxGeometry x="20" y="70" width="1120" height="360" as="geometry" />
+        </mxCell>
+
+        <!-- 后端 -->
+        <mxCell id="backend" value="后端（FrontBookController, BookService, BookMapper）" style="swimlane;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#9673a6;fontSize=13;fontStyle=1;startSize=30;" vertex="1" parent="1">
+          <mxGeometry x="20" y="450" width="1120" height="360" as="geometry" />
+        </mxCell>
+
+        <!-- 首页加载组件 -->
+        <mxCell id="homePageLoad" value="首页组件加载（Home.vue）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="200" y="120" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 调用轮播图接口 -->
+        <mxCell id="carouselApi" value="调用轮播图接口" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="400" y="120" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 调用图书列表接口 -->
+        <mxCell id="bookListApi" value="调用图书列表接口" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="600" y="120" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 调用分类列表接口 -->
+        <mxCell id="categoryApi" value="调用分类列表接口" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="800" y="120" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 后端接收请求 -->
+        <mxCell id="backendReceive" value="FrontBookController 接收请求" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="600" y="450" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 查询图书 -->
+        <mxCell id="bookSearch" value="BookService 查询图书列表" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="800" y="450" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 应用分页和筛选 -->
+        <mxCell id="applyPagination" value="应用分页和筛选条件" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="450" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 返回结果 -->
+        <mxCell id="returnResult" value="返回分页后的图书数据" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="450" width="220" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 渲染图书列表 -->
+        <mxCell id="renderList" value="前端渲染图书列表" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="450" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 渲染分页 -->
+        <mxCell id="renderPagination" value="前端渲染分页栏" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="450" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 用户点击图书 -->
+        <mxCell id="bookClick" value="用户点击图书" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="200" y="240" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 调用图书详情接口 -->
+        <mxCell id="bookDetailApi" value="调用图书详情接口" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="400" y="240" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 后端查询图书详情 -->
+        <mxCell id="bookDetailSearch" value="后端查询图书详情" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="600" y="240" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 返回图书详情 -->
+        <mxCell id="returnBookDetail" value="返回图书详情（书名、作者、价格等）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="800" y="240" width="220" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 渲染图书详情 -->
+        <mxCell id="renderBookDetail" value="前端渲染图书详情" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="240" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 各节点之间的箭头 -->
+        <mxCell id="arrows" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" edge="1" parent="1" source="homePageLoad" target="carouselApi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 轮播图接口 -->
+        <mxCell id="arrow1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" edge="1" parent="1" source="carouselApi" target="bookListApi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 图书列表接口 -->
+        <mxCell id="arrow2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" edge="1" parent="1" source="bookListApi" target="categoryApi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 分类接口 -->
+        <mxCell id="arrow3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" edge="1" parent="1" source="categoryApi" target="backendReceive">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 查询结果 -->
+        <mxCell id="arrow4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" edge="1" parent="1" source="backendReceive" target="bookSearch">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 返回数据 -->
+        <mxCell id="arrow5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" edge="1" parent="1" source="bookSearch" target="returnResult">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 渲染页面 -->
+        <mxCell id="arrow6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" edge="1" parent="1" source="returnResult" target="renderList">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 渲染分页 -->
+        <mxCell id="arrow7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" edge="1" parent="1" source="renderList" target="renderPagination">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 点击图书 -->
+        <mxCell id="arrow8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" edge="1" parent="1" source="bookClick" target="bookDetailApi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 查询详情 -->
+        <mxCell id="arrow9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" edge="1" parent="1" source="bookDetailApi" target="bookDetailSearch">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 返回详情 -->
+        <mxCell id="arrow10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" edge="1" parent="1" source="bookDetailSearch" target="returnBookDetail">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 渲染详情 -->
+        <mxCell id="arrow11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;" edge="1" parent="1" source="returnBookDetail" target="renderBookDetail">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
