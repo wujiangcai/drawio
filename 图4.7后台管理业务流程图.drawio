@@ -1,220 +1,160 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64)">
   <diagram id="fig-4-7-admin-flow" name="图4.7 后台管理业务流程图">
-    <mxGraphModel dx="2555" dy="1735" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+    <mxGraphModel dx="1703" dy="1157" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="title" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;fontSize=16;fontStyle=1;align=center;verticalAlign=middle;" value="后台管理业务流程图" vertex="1">
-          <mxGeometry height="46" width="500" x="334" y="20" as="geometry" />
-        </mxCell>
         <mxCell id="start" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" value="开始" vertex="1">
-          <mxGeometry height="50" width="120" x="524" y="90" as="geometry" />
+          <mxGeometry height="50" width="120" x="767" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="loginReq" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" value="管理员通过后台登录接口提交账号与密码" vertex="1">
-          <mxGeometry height="60" width="305" x="431.5" y="184" as="geometry" />
+        <mxCell id="loginPage" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" value="后台登录页" vertex="1">
+          <mxGeometry height="50" width="180" x="737" y="120" as="geometry" />
         </mxCell>
-        <mxCell id="checkRole" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" value="校验登录信息及用户角色是否为管理员" vertex="1">
-          <mxGeometry height="100" width="360" x="404" y="280" as="geometry" />
+        <mxCell id="login" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" value="管理员登录" vertex="1">
+          <mxGeometry height="50" width="160" x="747" y="200" as="geometry" />
         </mxCell>
-        <mxCell id="loginFail" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" value="拒绝访问后台页面并返回登录失败或权限不足信息" vertex="1">
-          <mxGeometry height="50" width="240" x="804" y="305" as="geometry" />
+        <mxCell id="adminHome" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" value="后台首页" vertex="1">
+          <mxGeometry height="50" width="180" x="737" y="280" as="geometry" />
         </mxCell>
-        <mxCell id="enterAdmin" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" value="登录成功，进入后台管理首页" vertex="1">
-          <mxGeometry height="55" width="225" x="471.5" y="416" as="geometry" />
+        <mxCell id="branchRoot" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;opacity=0;" value="" vertex="1">
+          <mxGeometry height="1" width="1" x="826" y="350" as="geometry" />
         </mxCell>
-        <mxCell id="chooseModule" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" value="选择后台管理功能模块" vertex="1">
-          <mxGeometry height="90" width="300" x="434" y="520" as="geometry" />
+        <mxCell id="userMng" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" value="用户管理" vertex="1">
+          <mxGeometry height="50" width="160" x="90" y="390" as="geometry" />
         </mxCell>
-        <mxCell id="userMng" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" value="用户管理&#xa;查看用户信息、维护用户状态、创建后台账号、重置用户密码" vertex="1">
-          <mxGeometry height="95" width="240" x="54" y="690" as="geometry" />
+        <mxCell id="userQuery" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" value="查询用户" vertex="1">
+          <mxGeometry height="50" width="160" x="90" y="490" as="geometry" />
         </mxCell>
-        <mxCell id="bookCateMng" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" value="图书与分类管理&#xa;新增图书、修改图书信息、调整上下架状态、维护分类结构" vertex="1">
-          <mxGeometry height="95" width="260" x="307" y="690" as="geometry" />
+        <mxCell id="userEdit" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" value="修改状态或重置密码" vertex="1">
+          <mxGeometry height="50" width="200" x="70" y="590" as="geometry" />
         </mxCell>
-        <mxCell id="bannerMng" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" value="轮播图管理&#xa;更新首页轮播图资源，支持宣传展示与运营活动" vertex="1">
-          <mxGeometry height="95" width="240" x="614" y="690" as="geometry" />
+        <mxCell id="bookMng" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" value="图书管理" vertex="1">
+          <mxGeometry height="50" width="160" x="360" y="390" as="geometry" />
         </mxCell>
-        <mxCell id="orderMng" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" value="订单管理&#xa;查看订单列表与详情，并根据订单状态执行取消、发货等操作" vertex="1">
-          <mxGeometry height="95" width="240" x="914" y="690" as="geometry" />
+        <mxCell id="bookEdit" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" value="新增或编辑图书" vertex="1">
+          <mxGeometry height="50" width="180" x="350" y="490" as="geometry" />
         </mxCell>
-        <mxCell id="back1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="操作完成后返回后台首页" vertex="1">
-          <mxGeometry height="45" width="200" x="74" y="835" as="geometry" />
+        <mxCell id="bookShelf" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" value="图书上下架处理" vertex="1">
+          <mxGeometry height="50" width="180" x="350" y="590" as="geometry" />
         </mxCell>
-        <mxCell id="back2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="操作完成后返回后台首页" vertex="1">
-          <mxGeometry height="45" width="200" x="337" y="835" as="geometry" />
+        <mxCell id="categoryMng" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" value="分类管理" vertex="1">
+          <mxGeometry height="50" width="160" x="630" y="390" as="geometry" />
         </mxCell>
-        <mxCell id="back3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="操作完成后返回后台首页" vertex="1">
-          <mxGeometry height="45" width="200" x="634" y="839" as="geometry" />
+        <mxCell id="categoryQuery" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" value="查询分类" vertex="1">
+          <mxGeometry height="50" width="160" x="630" y="490" as="geometry" />
         </mxCell>
-        <mxCell id="orderCheck" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" value="订单状态是否满足当前操作条件" vertex="1">
-          <mxGeometry height="95" width="300" x="884" y="835" as="geometry" />
+        <mxCell id="categoryEdit" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" value="新增、修改或删除分类" vertex="1">
+          <mxGeometry height="50" width="220" x="600" y="590" as="geometry" />
         </mxCell>
-        <mxCell id="orderReject" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="不允许执行操作，提示状态流转不合法&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="44" width="244" x="760" y="966" as="geometry" />
+        <mxCell id="bannerMng" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" value="轮播图管理" vertex="1">
+          <mxGeometry height="50" width="170" x="900" y="390" as="geometry" />
         </mxCell>
-        <mxCell id="orderExec" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" value="执行取消订单、发货等处理，并更新订单状态与履约信息" vertex="1">
-          <mxGeometry height="60" width="360" x="854" y="1110" as="geometry" />
+        <mxCell id="bannerQuery" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" value="查询轮播图" vertex="1">
+          <mxGeometry height="50" width="170" x="900" y="490" as="geometry" />
         </mxCell>
-        <mxCell id="back4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="处理完成后返回后台首页" vertex="1">
-          <mxGeometry height="45" width="200" x="934" y="1210" as="geometry" />
+        <mxCell id="bannerEdit" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" value="新增、修改或删除轮播图" vertex="1">
+          <mxGeometry height="50" width="230" x="870" y="590" as="geometry" />
         </mxCell>
-        <mxCell id="logoutAsk" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" value="是否继续进行后台管理操作" vertex="1">
-          <mxGeometry height="90" width="300" x="434" y="1320" as="geometry" />
+        <mxCell id="orderMng" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" value="订单管理" vertex="1">
+          <mxGeometry height="50" width="160" x="1170" y="390" as="geometry" />
         </mxCell>
-        <mxCell id="logout" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" value="退出后台系统" vertex="1">
-          <mxGeometry height="50" width="260" x="454" y="1450" as="geometry" />
+        <mxCell id="orderQuery" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" value="查询订单" vertex="1">
+          <mxGeometry height="50" width="160" x="1170" y="490" as="geometry" />
         </mxCell>
-        <mxCell id="end" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" value="结束" vertex="1">
-          <mxGeometry height="50" width="120" x="524" y="1540" as="geometry" />
+        <mxCell id="orderCheck" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" value="是否允许当前操作" vertex="1">
+          <mxGeometry height="100" width="200" x="1150" y="580" as="geometry" />
         </mxCell>
-        <mxCell id="e1" edge="1" parent="1" source="start" style="endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="loginReq" value="">
+        <mxCell id="orderExec" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" value="发货或取消订单" vertex="1">
+          <mxGeometry height="50" width="160" x="1170" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="orderReject" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;align=center;verticalAlign=middle;" value="提示状态不允许操作" vertex="1">
+          <mxGeometry height="50" width="190" x="1400" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="loginPage">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e2" edge="1" parent="1" source="loginReq" style="endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="checkRole" value="">
+        <mxCell id="e2" edge="1" parent="1" source="loginPage" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="login">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="lab1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" value="否" vertex="1">
-          <mxGeometry height="20" width="40" x="754" y="300" as="geometry" />
-        </mxCell>
-        <mxCell id="e3" edge="1" parent="1" source="checkRole" style="endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="loginFail" value="">
+        <mxCell id="e3" edge="1" parent="1" source="login" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="adminHome">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="lab2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" value="是" vertex="1">
-          <mxGeometry height="20" width="40" x="605" y="392" as="geometry" />
-        </mxCell>
-        <mxCell id="e4" edge="1" parent="1" source="checkRole" style="endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="enterAdmin" value="">
+        <mxCell id="e4" edge="1" parent="1" source="adminHome" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="branchRoot">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e5" edge="1" parent="1" source="loginFail" style="endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;rounded=0;curved=0;" target="end" value="">
+        <mxCell id="e5" edge="1" parent="1" source="branchRoot" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="userMng">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1280" y="333" />
-              <mxPoint x="1280" y="954" />
-              <mxPoint x="1284" y="1565" />
+              <mxPoint x="170" y="350" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="e6" edge="1" parent="1" source="enterAdmin" style="endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="chooseModule" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="lab3" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" value="用户管理" vertex="1">
-          <mxGeometry height="20" width="70" x="224" y="520" as="geometry" />
-        </mxCell>
-        <mxCell id="e7" edge="1" parent="1" source="chooseModule" style="endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;rounded=0;curved=0;" target="userMng" value="">
+        <mxCell id="e6" edge="1" parent="1" source="branchRoot" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="bookMng">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="174" y="565" />
+              <mxPoint x="440" y="350" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="lab4" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" value="图书与分类" vertex="1">
-          <mxGeometry height="20" width="90" x="337" y="613" as="geometry" />
-        </mxCell>
-        <mxCell id="lab5" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" value="轮播图管理" vertex="1">
-          <mxGeometry height="20" width="90" x="804" y="621" as="geometry" />
-        </mxCell>
-        <mxCell id="e9" edge="1" parent="1" source="chooseModule" style="endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=none;rounded=0;curved=0;" target="bannerMng" value="">
+        <mxCell id="e7" edge="1" parent="1" source="branchRoot" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="categoryMng">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="754" y="565" />
+              <mxPoint x="710" y="350" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="lab6" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" value="订单管理" vertex="1">
-          <mxGeometry height="20" width="70" x="934" y="526" as="geometry" />
-        </mxCell>
-        <mxCell id="e10" edge="1" parent="1" source="chooseModule" style="endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;rounded=0;curved=0;" target="orderMng" value="">
+        <mxCell id="e8" edge="1" parent="1" source="branchRoot" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="bannerMng">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1034" y="565" />
+              <mxPoint x="985" y="350" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="e11" edge="1" parent="1" source="userMng" style="endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="back1" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e12" edge="1" parent="1" source="bookCateMng" style="endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="back2" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e13" edge="1" parent="1" source="bannerMng" style="endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="back3" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e14" edge="1" parent="1" source="orderMng" style="endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="orderCheck" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="lab7" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" value="否" vertex="1">
-          <mxGeometry height="20" width="40" x="846" y="919" as="geometry" />
-        </mxCell>
-        <mxCell id="e15" edge="1" parent="1" source="orderCheck" style="endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="orderReject" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="lab8" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" value="是" vertex="1">
-          <mxGeometry height="20" width="40" x="1065" y="993" as="geometry" />
-        </mxCell>
-        <mxCell id="e16" edge="1" parent="1" source="orderCheck" style="endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="orderExec" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e18" edge="1" parent="1" source="orderExec" style="endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="back4" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e19" edge="1" parent="1" source="back1" style="endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;rounded=0;curved=0;" target="logoutAsk" value="">
+        <mxCell id="e9" edge="1" parent="1" source="branchRoot" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="orderMng">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="174" y="1365" />
+              <mxPoint x="1250" y="350" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="e22" edge="1" parent="1" source="back4" style="endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;rounded=0;curved=0;" target="logoutAsk" value="">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1034" y="1365" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="lab9" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" value="是" vertex="1">
-          <mxGeometry height="20" width="40" x="760" y="1345" as="geometry" />
-        </mxCell>
-        <mxCell id="e23" edge="1" parent="1" source="logoutAsk" style="endArrow=none;endFill=0;strokeWidth=1.2;strokeColor=#000000;edgeStyle=orthogonalEdgeStyle;startArrow=classic;startFill=1;" target="chooseModule" value="">
+        <mxCell id="e10" edge="1" parent="1" source="userMng" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="userQuery">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="lab10" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" value="否" vertex="1">
-          <mxGeometry height="20" width="40" x="605" y="1420" as="geometry" />
-        </mxCell>
-        <mxCell id="e24" edge="1" parent="1" source="logoutAsk" style="endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="logout" value="">
+        <mxCell id="e11" edge="1" parent="1" source="userQuery" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="userEdit">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e25" edge="1" parent="1" source="logout" style="endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="end" value="">
+        <mxCell id="e12" edge="1" parent="1" source="bookMng" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="bookEdit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="bookEdit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="bookShelf">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="categoryMng" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="categoryQuery">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="categoryQuery" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="categoryEdit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="bannerMng" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="bannerQuery">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="bannerQuery" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="bannerEdit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="orderMng" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="orderQuery">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e19" edge="1" parent="1" source="orderQuery" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="orderCheck">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e20" edge="1" parent="1" source="orderCheck" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;labelBackgroundColor=#ffffff;" target="orderExec" value="是">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e21" edge="1" parent="1" source="orderCheck" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;labelBackgroundColor=#ffffff;" target="orderReject" value="否">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="caption" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=15;" value="图4.7 后台管理业务流程图" vertex="1">
-          <mxGeometry height="30" width="500" x="334" y="1605" as="geometry" />
-        </mxCell>
-        <mxCell id="cdLrkMzrDOS4KVEbqqmb-1" edge="1" parent="1" source="lab4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="lab4">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="gbucQa9KrfmqkuVai7gJ-1" edge="1" parent="1" source="logoutAsk" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" target="back2" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="669" y="1197" as="sourcePoint" />
-            <mxPoint x="719" y="1147" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="gbucQa9KrfmqkuVai7gJ-2" edge="1" parent="1" source="chooseModule" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endFill=1;" target="bookCateMng" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="731" y="935" as="sourcePoint" />
-            <mxPoint x="781" y="885" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="gbucQa9KrfmqkuVai7gJ-5" edge="1" parent="1" source="bannerMng" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endFill=0;startArrow=classic;startFill=1;" target="chooseModule" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="731" y="935" as="sourcePoint" />
-            <mxPoint x="781" y="885" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="gbucQa9KrfmqkuVai7gJ-6" edge="1" parent="1" source="back3" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endFill=1;" target="logoutAsk" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="731" y="935" as="sourcePoint" />
-            <mxPoint x="781" y="885" as="targetPoint" />
-          </mxGeometry>
+          <mxGeometry height="30" width="420" x="617" y="1110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
