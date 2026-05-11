@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0">
+  <diagram id="registered-user-usecase-002" name="Page-1">
+    <mxGraphModel dx="1022" dy="660" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="actor" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=16;" value="注册用户" vertex="1">
+          <mxGeometry height="120" width="60" x="554" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_login" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=16;" value="登录" vertex="1">
+          <mxGeometry height="56" width="190" x="160" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_profile" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=16;" value="个人资料编辑" vertex="1">
+          <mxGeometry height="56" width="190" x="160" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_password" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=16;" value="密码修改" vertex="1">
+          <mxGeometry height="56" width="190" x="160" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_address" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=16;" value="收货地址管理" vertex="1">
+          <mxGeometry height="56" width="190" x="160" y="415" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_cart" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=16;" value="购物车管理" vertex="1">
+          <mxGeometry height="56" width="190" x="160" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_create" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=16;" value="订单创建" vertex="1">
+          <mxGeometry height="56" width="190" x="780" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_pay" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=16;" value="订单支付" vertex="1">
+          <mxGeometry height="56" width="190" x="780" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_query" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=16;" value="订单查询" vertex="1">
+          <mxGeometry height="56" width="190" x="780" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_cancel" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=16;" value="图书浏览" vertex="1">
+          <mxGeometry height="56" width="190" x="780" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_recommend" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=16;" value="个性化推荐" vertex="1">
+          <mxGeometry height="56" width="190" x="780" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="caption" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;fontFamily=SimSun;fontSize=16;" value="图3.2 注册用户用例图" vertex="1">
+          <mxGeometry height="30" width="220" x="484" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="e_login" edge="1" parent="1" source="actor" style="endArrow=none;startArrow=none;html=1;strokeColor=#000000;rounded=0;" target="uc_login" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_profile" edge="1" parent="1" source="actor" style="endArrow=none;startArrow=none;html=1;strokeColor=#000000;rounded=0;" target="uc_profile" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_password" edge="1" parent="1" source="actor" style="endArrow=none;startArrow=none;html=1;strokeColor=#000000;rounded=0;" target="uc_password" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_address" edge="1" parent="1" source="actor" style="endArrow=none;startArrow=none;html=1;strokeColor=#000000;rounded=0;" target="uc_address" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_cart" edge="1" parent="1" source="actor" style="endArrow=none;startArrow=none;html=1;strokeColor=#000000;rounded=0;" target="uc_cart" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_create" edge="1" parent="1" source="actor" style="endArrow=none;startArrow=none;html=1;strokeColor=#000000;rounded=0;" target="uc_create" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_pay" edge="1" parent="1" source="actor" style="endArrow=none;startArrow=none;html=1;strokeColor=#000000;rounded=0;" target="uc_pay" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_query" edge="1" parent="1" source="actor" style="endArrow=none;startArrow=none;html=1;strokeColor=#000000;rounded=0;" target="uc_query" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_cancel" edge="1" parent="1" source="actor" style="endArrow=none;startArrow=none;html=1;strokeColor=#000000;rounded=0;" target="uc_cancel" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_recommend" edge="1" parent="1" source="actor" style="endArrow=none;startArrow=none;html=1;strokeColor=#000000;rounded=0;" target="uc_recommend" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

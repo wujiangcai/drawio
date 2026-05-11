@@ -1,0 +1,66 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0" version="29.6.6">
+  <diagram id="front-purchase-flow-431" name="图4.3.1 前台用户购书流程图">
+    <mxGraphModel dx="900" dy="1100" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" value="开始" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="494" y="40" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="home" value="进入商城首页" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="444" y="125" width="280" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="browse" value="浏览推荐图书或检索图书" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="424" y="220" width="320" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="detail" value="查看图书详情" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="444" y="315" width="280" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="login_check" value="是否已登录" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="484" y="405" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="login" value="登录或注册" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="780" y="422" width="220" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="cart" value="加入购物车" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="444" y="535" width="280" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="checkout" value="勾选商品并选择收货地址" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="424" y="630" width="320" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="order" value="生成待支付订单" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="444" y="725" width="280" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="pay_check" value="是否完成支付" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="484" y="815" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="pending_pay" value="订单待支付" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="185" y="832" width="220" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="pending_ship" value="订单待发货" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="765" y="832" width="220" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="end" value="结束" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="494" y="985" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="caption" value="图4.3.1 前台用户购书流程图" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;fontFamily=SimSun;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="424" y="1080" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="start" target="home"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e2" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="home" target="browse"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e3" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="browse" target="detail"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e4" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="detail" target="login_check"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e5" value="否" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontFamily=SimSun;fontSize=14;" edge="1" parent="1" source="login_check" target="login"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e6" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="login" target="cart"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e7" value="是" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontFamily=SimSun;fontSize=14;" edge="1" parent="1" source="login_check" target="cart"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e8" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="cart" target="checkout"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e9" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="checkout" target="order"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e10" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="order" target="pay_check"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e11" value="否" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontFamily=SimSun;fontSize=14;" edge="1" parent="1" source="pay_check" target="pending_pay"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e12" value="是" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontFamily=SimSun;fontSize=14;" edge="1" parent="1" source="pay_check" target="pending_ship"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e13" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="pending_pay" target="end"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e14" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;" edge="1" parent="1" source="pending_ship" target="end"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

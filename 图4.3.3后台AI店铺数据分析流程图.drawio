@@ -1,0 +1,107 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="adminAiAnalysisFlow" name="Page-1">
+    <mxGraphModel dx="1703" dy="1100" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;" value="开始" vertex="1">
+          <mxGeometry height="50" width="180" x="494" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;" value="管理员登录后台系统" vertex="1">
+          <mxGeometry height="55" width="280" x="444" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;" value="进入AI店铺数据分析页面" vertex="1">
+          <mxGeometry height="55" width="320" x="424" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;" value="是否具备管理员权限" vertex="1">
+          <mxGeometry height="90" width="220" x="474" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;" value="点击开始分析" vertex="1">
+          <mxGeometry height="55" width="280" x="444" y="445" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;" value="请求AI分析接口" vertex="1">
+          <mxGeometry height="58" width="300" x="434" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;" value="聚合经营看板数据" vertex="1">
+          <mxGeometry height="55" width="280" x="444" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;" value="生成规则兜底结果" vertex="1">
+          <mxGeometry height="55" width="280" x="444" y="735" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;" value="调用AI模型并解析JSON" vertex="1">
+          <mxGeometry height="55" width="300" x="434" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;" value="模型结果是否可用" vertex="1">
+          <mxGeometry height="90" width="220" x="474" y="925" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;" value="返回AI模型分析结果" vertex="1">
+          <mxGeometry height="55" width="260" x="765" y="942" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;" value="返回规则兜底结果" vertex="1">
+          <mxGeometry height="55" width="260" x="145" y="942" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;" value="展示摘要、指标、预测和建议" vertex="1">
+          <mxGeometry height="58" width="340" x="414" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=none;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;" value="结束" vertex="1">
+          <mxGeometry height="50" width="180" x="494" y="1180" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;fontFamily=SimSun;fontSize=16;" value="图4.3.3 后台AI店铺数据分析流程图" vertex="1">
+          <mxGeometry height="30" width="380" x="394" y="1260" as="geometry" />
+        </mxCell>
+        <mxCell id="18" edge="1" parent="1" source="2" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;" target="3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="19" edge="1" parent="1" source="3" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;" target="4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="20" edge="1" parent="1" source="4" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;" target="5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="21" edge="1" parent="1" source="5" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontFamily=SimSun;fontSize=14;edgeStyle=orthogonalEdgeStyle;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="16" value="否">
+          <mxGeometry relative="1" x="-0.9466" as="geometry">
+            <mxPoint x="1" as="offset" />
+            <Array as="points">
+              <mxPoint x="116" y="360" />
+              <mxPoint x="116" y="1205" />
+            </Array>
+            <mxPoint x="114" y="1218" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="22" edge="1" parent="1" source="5" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontFamily=SimSun;fontSize=14;" target="7" value="是">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="23" edge="1" parent="1" source="7" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;" target="8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="24" edge="1" parent="1" source="8" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;" target="9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25" edge="1" parent="1" source="9" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;" target="10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="26" edge="1" parent="1" source="10" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;" target="11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="27" edge="1" parent="1" source="11" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;" target="12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="28" edge="1" parent="1" source="12" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontFamily=SimSun;fontSize=14;" target="13" value="是">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="29" edge="1" parent="1" source="12" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontFamily=SimSun;fontSize=14;" target="14" value="否">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="30" edge="1" parent="1" source="13" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;" target="15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="31" edge="1" parent="1" source="14" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;" target="15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="32" edge="1" parent="1" source="15" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;" target="16" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
