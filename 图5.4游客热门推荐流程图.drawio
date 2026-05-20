@@ -1,0 +1,128 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64)">
+  <diagram id="guest-popular-recommend-flow" name="图5.4 游客热门推荐流程图">
+    <mxGraphModel dx="1703" dy="1100" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="开始" vertex="1">
+          <mxGeometry height="50" width="120" x="524" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="visit" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="游客访问首页或图书详情页" vertex="1">
+          <mxGeometry height="50" width="240" x="464" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="request" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="前端请求推荐图书数据" vertex="1">
+          <mxGeometry height="55" width="240" x="464" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="callService" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="调用 RecommendationServiceImpl.recommend()" vertex="1">
+          <mxGeometry height="55" width="330" x="419" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="normalize" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="规范化推荐数量 limit" vertex="1">
+          <mxGeometry height="50" width="230" x="469" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="judgeUser" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="userId 是否为空" vertex="1">
+          <mxGeometry height="105" width="220" x="474" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="skipCf" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="游客无登录身份和历史行为数据，跳过协同过滤" vertex="1">
+          <mxGeometry height="65" width="310" x="429" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="cfCandidate" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="注册用户查询协同过滤候选图书" vertex="1">
+          <mxGeometry height="55" width="270" x="805" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="needFill" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="推荐结果是否不足" vertex="1">
+          <mxGeometry height="105" width="220" x="474" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="popularQuery" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="查询热门候选图书" vertex="1">
+          <mxGeometry height="50" width="220" x="474" y="835" as="geometry" />
+        </mxCell>
+        <mxCell id="hotBasis" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="依据销量、浏览热度、加购行为或综合热度排序" vertex="1">
+          <mxGeometry height="65" width="360" x="404" y="925" as="geometry" />
+        </mxCell>
+        <mxCell id="append" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="去重并补充推荐列表" vertex="1">
+          <mxGeometry height="50" width="230" x="469" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="limitResult" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="截取指定数量并封装推荐策略、推荐理由" vertex="1">
+          <mxGeometry height="60" width="330" x="419" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="returnResult" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="返回热门推荐结果" vertex="1">
+          <mxGeometry height="55" width="230" x="469" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="frontendShow" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="前端以卡片网格展示封面、书名、作者、价格和推荐理由" vertex="1">
+          <mxGeometry height="65" width="380" x="394" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="clickDetail" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="游客点击图书进入详情页继续浏览" vertex="1">
+          <mxGeometry height="55" width="290" x="439" y="1400" as="geometry" />
+        </mxCell>
+        <mxCell id="end" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="结束" vertex="1">
+          <mxGeometry height="50" width="120" x="524" y="1490" as="geometry" />
+        </mxCell>
+        <mxCell id="caption" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=SimSun;fontSize=14;fontColor=#000000;" value="图5.4 游客热门推荐流程图" vertex="1">
+          <mxGeometry height="30" width="300" x="434" y="1565" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="visit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="visit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="request">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="callService">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="callService" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="normalize">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="normalize" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="judgeUser">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="judgeUser" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;labelBackgroundColor=#ffffff;" target="skipCf" value="是">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="judgeUser" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;labelBackgroundColor=#ffffff;" target="cfCandidate" value="否">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="cfCandidate" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="needFill">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="940" y="671" />
+              <mxPoint x="584" y="671" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="skipCf" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="needFill">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="needFill" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;labelBackgroundColor=#ffffff;" target="popularQuery" value="是">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="needFill" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="returnResult" value="否">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="742" />
+              <mxPoint x="300" y="1238" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="popularQuery" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="hotBasis">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="hotBasis" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="append">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="append" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="limitResult">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="limitResult" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="returnResult">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="returnResult" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="frontendShow">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="frontendShow" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="clickDetail">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="clickDetail" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

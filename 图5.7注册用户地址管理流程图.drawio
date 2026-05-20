@@ -1,0 +1,109 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64)">
+  <diagram id="registered-user-address-simple-flow" name="图5.8 注册用户地址管理流程图">
+    <mxGraphModel dx="1703" dy="1100" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="开始" vertex="1">
+          <mxGeometry height="46" width="110" x="358" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="login" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="用户登录系统" vertex="1">
+          <mxGeometry height="44" width="180" x="323" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="checkLogin" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="登录是否有效" vertex="1">
+          <mxGeometry height="86" width="180" x="323" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="loginError" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="提示重新登录" vertex="1">
+          <mxGeometry height="44" width="170" x="590" y="216" as="geometry" />
+        </mxCell>
+        <mxCell id="enterPage" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="进入地址管理页面" vertex="1">
+          <mxGeometry height="44" width="190" x="318" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="queryList" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="查询并显示地址列表" vertex="1">
+          <mxGeometry height="44" width="200" x="313" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="chooseOp" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="选择地址操作" vertex="1">
+          <mxGeometry height="44" width="180" x="323" y="465" as="geometry" />
+        </mxCell>
+        <mxCell id="operate" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="新增、修改、删除或设为默认地址" vertex="1">
+          <mxGeometry height="50" width="260" x="283" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="validate" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="信息是否合法" vertex="1">
+          <mxGeometry height="86" width="180" x="323" y="625" as="geometry" />
+        </mxCell>
+        <mxCell id="error" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="返回错误提示" vertex="1">
+          <mxGeometry height="44" width="170" x="590" y="646" as="geometry" />
+        </mxCell>
+        <mxCell id="save" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="保存地址处理结果" vertex="1">
+          <mxGeometry height="44" width="190" x="318" y="745" as="geometry" />
+        </mxCell>
+        <mxCell id="refresh" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="刷新地址列表" vertex="1">
+          <mxGeometry height="44" width="180" x="323" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="returnPage" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="返回地址管理页面" vertex="1">
+          <mxGeometry height="44" width="190" x="318" y="895" as="geometry" />
+        </mxCell>
+        <mxCell id="end" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="结束" vertex="1">
+          <mxGeometry height="46" width="110" x="358" y="970" as="geometry" />
+        </mxCell>
+        <mxCell id="caption" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=SimSun;fontSize=14;fontColor=#000000;" value="图5.8 注册用户地址管理流程图" vertex="1">
+          <mxGeometry height="30" width="280" x="273" y="1045" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="login">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="login" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="checkLogin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="checkLogin" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;labelBackgroundColor=#ffffff;" target="enterPage" value="是">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="checkLogin" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;labelBackgroundColor=#ffffff;" target="loginError" value="否">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="loginError" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="returnPage">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="792" y="238" />
+              <mxPoint x="792" y="917" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="enterPage" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="queryList">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="queryList" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="chooseOp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="chooseOp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="operate">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="operate" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="validate">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="validate" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;labelBackgroundColor=#ffffff;" target="save" value="是">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="validate" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;labelBackgroundColor=#ffffff;" target="error" value="否">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="error" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="refresh">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="675" y="842" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="save" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="refresh">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="refresh" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="returnPage">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="returnPage" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

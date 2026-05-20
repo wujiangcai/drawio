@@ -1,0 +1,84 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="fig-2-1-user-cf" name="图2.1 基于用户的协同过滤推荐算法图示">
+    <mxGraphModel dx="1136" dy="733" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;fontFamily=SimSun;fontSize=18;fontStyle=1;" value="基于用户的协同过滤推荐算法图示" vertex="1">
+          <mxGeometry height="32" width="480" x="344" y="38" as="geometry" />
+        </mxCell>
+        <mxCell id="user_label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontColor=#000000;fontFamily=SimSun;fontSize=16;fontStyle=1;" value="用户" vertex="1">
+          <mxGeometry height="28" width="120" x="120" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="book_label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontColor=#000000;fontFamily=SimSun;fontSize=16;fontStyle=1;" value="图书" vertex="1">
+          <mxGeometry height="28" width="120" x="770" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="user_a" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;strokeWidth=1.3;" value="用户A" vertex="1">
+          <mxGeometry height="46" width="110" x="130" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="user_b" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;strokeWidth=1.3;" value="用户B" vertex="1">
+          <mxGeometry height="46" width="110" x="130" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="book_java" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;strokeWidth=1.3;" value="《Java程序设计》" vertex="1">
+          <mxGeometry height="46" width="170" x="735" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="book_spring" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;strokeWidth=1.3;" value="《Spring Boot实战》" vertex="1">
+          <mxGeometry height="46" width="170" x="735" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="book_mysql" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=SimSun;fontSize=15;align=center;verticalAlign=middle;strokeWidth=1.5;" value="《MySQL数据库原理》" vertex="1">
+          <mxGeometry height="46" width="170" x="735" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_a_java" edge="1" parent="1" source="user_a" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;" target="book_java" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_a_spring" edge="1" parent="1" source="user_a" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;" target="book_spring" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_b_java" edge="1" parent="1" source="user_b" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;" target="book_java" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_b_spring" edge="1" parent="1" source="user_b" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;" target="book_spring" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_b_mysql" edge="1" parent="1" source="user_b" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;" target="book_mysql" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="similar_bracket" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontColor=#000000;fontFamily=SimSun;fontSize=72;fontStyle=0;" value="}" vertex="1">
+          <mxGeometry height="150" width="35" x="255" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="similar_text" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontColor=#000000;fontFamily=SimSun;fontSize=15;fontStyle=1;" value="兴趣相似" vertex="1">
+          <mxGeometry height="28" width="90" x="287" y="246" as="geometry" />
+        </mxCell>
+        <mxCell id="recommend_edge" edge="1" parent="1" source="book_mysql" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;dashed=1;dashPattern=6 4;fontColor=#000000;fontFamily=SimSun;fontSize=14;strokeWidth=1.4;" target="user_a" value="推荐">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="355" />
+              <mxPoint x="570" y="193" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend_solid" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.2;" value="">
+          <mxGeometry relative="1" x="0.5" as="geometry">
+            <mxPoint x="742" y="417" as="sourcePoint" />
+            <mxPoint x="797" y="417" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend_solid_text" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontColor=#000000;fontFamily=SimSun;fontSize=13;" value="已购买" vertex="1">
+          <mxGeometry height="24" width="70" x="812" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_dash" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;dashed=1;dashPattern=6 4;strokeWidth=1.2;" value="">
+          <mxGeometry relative="1" x="0.5" as="geometry">
+            <mxPoint x="742" y="443" as="sourcePoint" />
+            <mxPoint x="797" y="443" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend_dash_text" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontColor=#000000;fontFamily=SimSun;fontSize=13;" value="推荐" vertex="1">
+          <mxGeometry height="24" width="70" x="812" y="431" as="geometry" />
+        </mxCell>
+        <mxCell id="caption" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontColor=#000000;fontFamily=SimSun;fontSize=15;" value="图 2.1 基于用户的协同过滤推荐算法图示" vertex="1">
+          <mxGeometry height="28" width="480" x="345" y="735" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

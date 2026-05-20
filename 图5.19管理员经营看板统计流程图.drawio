@@ -1,0 +1,137 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64)">
+  <diagram id="admin-dashboard-stat-flow" name="图5.19 管理员经营看板统计流程图">
+    <mxGraphModel dx="1202" dy="776" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="开始" vertex="1">
+          <mxGeometry height="46" width="110" x="358" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="enter" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="管理员进入后台首页" vertex="1">
+          <mxGeometry height="44" width="190" x="318" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="request" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="前端请求经营看板数据" vertex="1">
+          <mxGeometry height="44" width="210" x="308" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="service" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="调用 DashboardServiceImpl.getAdminDashboard" vertex="1">
+          <mxGeometry height="50" width="290" x="268" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="dateRange" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="计算今日统计时间范围" vertex="1">
+          <mxGeometry height="44" width="220" x="303" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="trendRange" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="计算近7天趋势起点" vertex="1">
+          <mxGeometry height="44" width="210" x="308" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="queryStart" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="聚合多维经营数据" vertex="1">
+          <mxGeometry height="44" width="190" x="318" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="overview" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=12;align=center;verticalAlign=middle;" value="查询经营概况&#xa;图书总数、订单总数&#xa;今日订单、今日营收" vertex="1">
+          <mxGeometry height="76" width="190" x="75" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="trend" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=12;align=center;verticalAlign=middle;" value="查询近7天趋势&#xa;并补齐缺失日期" vertex="1">
+          <mxGeometry height="76" width="180" x="323" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="stats" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=12;align=center;verticalAlign=middle;" value="查询订单状态分布&#xa;分类统计和热销图书" vertex="1">
+          <mxGeometry height="76" width="200" x="565" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="stock" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=12;align=center;verticalAlign=middle;" value="查询待发货订单&#xa;低库存图书和最近订单" vertex="1">
+          <mxGeometry height="76" width="210" x="65" y="695" as="geometry" />
+        </mxCell>
+        <mxCell id="limit" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=12;align=center;verticalAlign=middle;" value="应用阈值和数量限制&#xa;低库存阈值、热门图书数量&#xa;分类数量、最近订单数量" vertex="1">
+          <mxGeometry height="76" width="250" x="540" y="702" as="geometry" />
+        </mxCell>
+        <mxCell id="assemble" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="组装 AdminDashboardVO" vertex="1">
+          <mxGeometry height="44" width="220" x="303" y="825" as="geometry" />
+        </mxCell>
+        <mxCell id="return" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="一次性返回前端" vertex="1">
+          <mxGeometry height="44" width="190" x="318" y="895" as="geometry" />
+        </mxCell>
+        <mxCell id="render" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="渲染后台经营看板" vertex="1">
+          <mxGeometry height="44" width="200" x="313" y="965" as="geometry" />
+        </mxCell>
+        <mxCell id="end" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontFamily=SimSun;fontSize=13;align=center;verticalAlign=middle;" value="结束" vertex="1">
+          <mxGeometry height="46" width="110" x="358" y="1035" as="geometry" />
+        </mxCell>
+        <mxCell id="caption" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=SimSun;fontSize=14;fontColor=#000000;" value="图5.19 管理员经营看板统计流程图" vertex="1">
+          <mxGeometry height="30" width="340" x="243" y="1100" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="enter">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="enter" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="request">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="service">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="service" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="dateRange">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="dateRange" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="trendRange">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="trendRange" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="queryStart">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="queryStart" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="overview">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="413" y="535" />
+              <mxPoint x="170" y="535" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="queryStart" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="trend">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="queryStart" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="stats">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="413" y="535" />
+              <mxPoint x="665" y="535" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="overview" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="stock">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="689" />
+              <mxPoint x="170" y="689" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="stats" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="limit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="trend" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="assemble">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="stock" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="assemble">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="167" y="771" />
+              <mxPoint x="167" y="847" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="limit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="assemble">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="662" y="778" />
+              <mxPoint x="662" y="847" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="assemble" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="return">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="return" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="render">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="render" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#000000;" target="end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

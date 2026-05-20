@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram id="hybridRecommendSequence55" name="Page-1">
-    <mxGraphModel dx="1460" dy="943" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="1080" math="0" shadow="0">
+    <mxGraphModel dx="1572" dy="1015" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="1080" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -140,12 +140,6 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1112" y="710" as="sourcePoint" />
             <mxPoint x="873" y="710" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="31" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontFamily=SimSun;fontSize=17;fontStyle=1;" value="融合协同、内容、AI重排和热门候选">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="873" y="755" as="sourcePoint" />
-            <mxPoint x="1112" y="755" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="32" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;dashed=1;dashPattern=8 6;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontFamily=SimSun;fontSize=17;fontStyle=1;" value="返回推荐策略和理由">
